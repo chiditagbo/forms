@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<form action="../Programing/thankyoupage.html" method="post">
+	<div class="container">
+		<label for="username">UserName*:</label><br>
+			<input type="text" name="username" id="username" required placeholder="Enter your Username" title="Enter your Username"><br>
+
+
+		<label for="password">Password*:</label><br>
+			<input type="password" name="password" id="password" required placeholder="Enter your password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+
+
+			<input type="submit" class="submit" value="Login"><br>
+			<input type="checkbox" name="remember" title="Remember me"> Remember me
+	</div>
+</form>
+
+<div id="message">
+	<h3>Password must contain the following:</h3>
+	<p id="letter" class="invalid">An <strong>Uppercase</strong> letter</p>
+	<p id="letter" class="invalid">A <strong>lowercase</strong> letter</p>
+	<p id="number" class="invalid">A <strong>number</strong></p>
+	<p id="length" class="invalid">Minimum of<strong> 8 characters</strong></p>
+	
+</div>
+</html>
